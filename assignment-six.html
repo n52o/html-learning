@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Six</title>
+</head>
+<body>
+    <!-- 
+    1- Create a form containing three input fields.
+
+    2- Each field must have a label before it.
+
+    3- The fields are: Token, Email, and Username.
+
+    4- Make sure that the Token field is a hidden field containing the following value: b92f1fc2fce391ad7af633723afd3055.
+
+    5- Make sure that the Email field is read-only (cannot be edited) and contains the following value: o@o.com.
+
+    6- When the page opens, make sure that the text cursor is focused on the Username field.
+
+    7- Ensure that the Username field accepts a username from 5 to 20 characters only and is required.
+
+    8- Create a button that clears the data entered by the user, named "Empty".
+
+    9- Create a button to submit the data, named "Send".
+
+    10- The data is submitted to the same page.
+     -->
+    <form action="" method="get">
+        <div>
+            <label for="Token">Token</label>
+            <br>
+            <input type="password" name="Token" value="b92f1fc2fce391ad7af633723afd3055" id="Token">
+        </div>
+        <br>
+        <hr>
+        <div>
+            <label for="Email">Email</label>
+            <br>
+            <input type="email" name="Email" id="Email" value="o@o.com">
+        </div>
+        <br>
+        <hr>
+        <div>
+            <label for="Username">Username</label>
+            <br>
+            <input
+             type ="text" 
+             name ="Username" 
+             id = "Username" 
+             minlength = "5" 
+             maxlength = "20" 
+             required 
+             autofocus>
+        </div>
+        <br>
+        <hr>
+        <div>
+            <input type="reset" name="Empty" id="Empty" value="Empty">
+        </div>
+        <br>
+        <hr>
+        <div>
+            <input type="submit" name="Send" id="Send" value="Send">
+        </div>
+    </form>
+</body>
+</html>
