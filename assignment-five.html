@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Five</title>
+</head>
+<body>
+    <!-- 
+    1- Create a form containing five input fields.
+
+    2- Each field must have a label before it.
+
+    3- The fields are: Username, Password, Mobile, Email, and Subject.
+
+    4- Make sure to choose the appropriate input type for each of the above.
+
+    5- The Mobile field can contain a number in this format: +20100 (234) 123.
+
+    6- The Username and Email fields are required.
+
+    7- All fields must contain placeholder text guiding the user with tips while filling out the field (you can write whatever tips you want).
+
+    8- Each label must be on a line and its input field on another line directly below it.
+    
+    9- After each Label + Input pair, place an <hr> tag to separate them from the subsequent Label + Input pair.
+    
+    10- The data in the form will be sent to a page named test.py.
+    
+    11- Ensure that the submitted data does not appear in the URL query string.
+    
+    12- Capture an image of the query string containing the data.
+    
+    13- Include a hidden field with any number value you prefer.
+    
+    14- Include a button named "Empty Form" that clears all entered text in the input fields.
+    -->
+    <form action = "test.py" method="post">
+        <div>
+            <label for="Username">Username</label>
+            <br>
+            <input type="text" name="Username" id="Username" required placeholder="Write Your User Name Here .">
+        </div>
+        <hr>
+        <br>
+        <div>
+            <label for="Password">Password</label>
+            <br>
+            <input type="password" name="Password" id="Password" placeholder="Write Your Password Here .">
+        </div>
+        <br>
+        <hr>
+        <div>
+            <label for="Mobile">Mobile</label>
+            <br>
+            <input type="number" name="" id="" pattern="\+" placeholder="Write Your Mobile Number Here .">
+        </div>
+        <br>
+        <hr>
+        <div>
+            <label for="Email">Email</label>
+            <br>
+            <input type="email" name="Email" id="Email" required placeholder="Write Your Email Here .">
+        </div>
+        <br>
+        <hr>
+        <div>
+            <label for="Subject">Subject</label>
+            <br>
+            <input type="text" name="Subject" id="Subject" placeholder="Write Your Subject Here .">
+        </div>
+        <br>
+        <hr>
+        <br>
+        <input type="reset" value="Empty Form">
+        <br>
+
+        <hr>
+        <br>
+        <input type="submit" value="Send Data">
+    </form>
+</body>
+</html>
